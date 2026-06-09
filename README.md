@@ -35,4 +35,77 @@
 3. Select one or more bones
 4. Open the sidebar (`N`) and go to the **Bone Tools** tab
 
+
+### Features in Detail
+
+#### 🔄 Reset Bones
+- Resets **location** to (0,0,0)
+- Resets **rotation** to identity (0°)
+- Resets **scale** to (1,1,1)
+- Works with all rotation modes (Quaternion, Euler, Axis Angle)
+
+#### 🎛️ Rotation Controls
+- Rotate bones in **5° increments** (configurable)
+- Independent control for **X, Y, and Z** axes
+- Visual feedback with direction arrows
+- Supports all rotation modes automatically
+
+#### 🔀 Mirror Pose
+- Copies and flips pose from selected bones
+- Perfect for symmetrical characters
+- Uses Blender's native mirror system
+- Works with any armature orientation
+
+#### 📷 Insert Keyframe
+- Inserts keyframes for all transform properties
+- Includes location, rotation, and scale
+- Groups keyframes by bone name in the Dope Sheet
+- Uses current frame position
+
+## 🎯 Supported Rig Types
+
+- ✅ Mixamo
+- ✅ Rigify
+- ✅ Auto-Rig Pro
+- ✅ Custom Armatures
+- ✅ Any bone-based rig
+
+## 🛠️ Technical Details
+
+- **Rotation Mode Support**: Quaternion, Euler (all orders), Axis Angle
+- **Undo Support**: Full undo/redo for all operations
+- **Performance**: Optimized for real-time feedback
+- **Compatibility**: Blender 3.6+
+
+## 📖 Keyboard Shortcuts
+
+While no custom shortcuts are assigned by default, you can create your own in Blender's Keymap preferences for these operators:
+
+- `bone.reset_selected_bones` - Reset bones
+- `bone.mirror_pose` - Mirror pose
+- `bone.insert_keyframe` - Insert keyframe
+
+## ❓ Troubleshooting
+
+### "Select an armature first"
+- Make sure you have an armature selected
+- Enter Pose Mode before using the tools
+
+### "Select some bones"
+- You need to select at least one bone in Pose Mode
+- Use `A` to select all bones or `B` for box select
+
+### Rotation doesn't work
+- Check if the bone is constrained
+- Some rigs have locked transforms
+- Try resetting before rotating
+
+### Mirror doesn't work as expected
+- Ensure your armature is properly named (e.g., "hand.L"/"hand.R")
+- Blender uses bone names with .L/.R suffixes for mirroring
+
+## 🔧 Development
+
+### File Structure
+
 ### Panel Overview
