@@ -108,4 +108,62 @@ While no custom shortcuts are assigned by default, you can create your own in Bl
 
 ### File Structure
 
+animate_bone_tools.py
+├── bl_info (metadata)
+├── Operators
+│ ├── BONE_OT_reset_selected_bones
+│ ├── BONE_OT_rotate_bone
+│ ├── BONE_OT_mirror_pose
+│ └── BONE_OT_insert_keyframe
+└── Panel (BONE_PT_panel)
+
+
+### Register/Unregister
+The addon follows Blender's standard register/unregister pattern and cleans up all properties on uninstallation.
+
+## 📝 Changelog
+
+### Version 1.9
+- Added Mirror Pose functionality
+- Renamed to "Animate Bone Tools"
+- Updated author information
+- Improved panel layout
+
+### Version 1.8
+- Added Insert Keyframe button
+- Removed redundant Wrist Rotation
+- Cleaned up interface
+
+### Version 1.0
+- Initial release
+- Basic reset and rotation controls
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+## 📧 Support
+
+- **Author**: Sergio ReOli
+- **Contact**: sergioreoli@hotmail.com
+- **PayPal**: [Donate](https://paypal.me/sergioreoli@hotmail.com)
+
+## 📄 License
+
+This project is licensed under the GPL 3.0 License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Blender Foundation for the amazing API
+- Mixamo and Rigify communities for inspiration
+- All beta testers and contributors
+
+---
+
+**Made with ❤️ for the Blender community**
+
 ### Panel Overview
