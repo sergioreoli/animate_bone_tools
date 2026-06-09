@@ -2,9 +2,7 @@
 
 [![Blender](https://img.shields.io/badge/Blender-3.6%2B-orange)](https://www.blender.org/)
 [![License](https://img.shields.io/badge/License-GPL%203.0-blue)](LICENSE)
-
-
-![animate_bone_tools](screenshots/Painel_Animate_Bone_Tools.png.png)
+![animate_bone_tools](screenshots/painel_animate_bone_tools.png)
 
 **Animate Bone Tools** is an addon for Blender that streamlines character animation workflow by providing quick access to bone reset, rotation controls, pose mirroring, and keyframe insertion - all in one convenient panel.
 
